@@ -21,13 +21,14 @@ The app allows users to input customer details (like credit limit, past payments
 ✅ Deployment on Streamlit Cloud for live predictions
 ✅ Interactive UI with sliders and dropdowns
 
-⚙️ Tech Stack
+### ⚙️ Tech Stack
 Category	Tools
 Language	Python
 Libraries	Pandas, NumPy, Scikit-Learn, XGBoost, Matplotlib, Seaborn
 Deployment	Streamlit
 Version Control	Git, GitHub
-🧩 Model Workflow
+
+### 🧩 Model Workflow
 flowchart LR
 A[Data Collection] --> B[EDA & Cleaning]
 B --> C[Feature Engineering]
@@ -36,20 +37,13 @@ D --> E[Hyperparameter Tuning]
 E --> F[Evaluation - Recall, F1, ROC-AUC]
 F --> G[Streamlit Deployment]
 
-📊 Model Performance
+### 📊 Model Performance
 Metric	Before Tuning	After Tuning
 Accuracy	83%	84%
 Recall (Defaulters)	33%	59%
 ROC-AUC	0.81	0.87
-🧮 Example Input
-Feature	Value
-Credit Limit	50,000
-Last Month Payment Status	-2
-Average Utilization	1.00
-Average Payment Ratio	1.00
-Education	Graduate
-Marital Status	Married
-🖥 How to Run Locally
+
+### 🖥 How to Run Locally
 # Clone repo
 git clone https://github.com/amitsingh2022/credit-risk-prediction-app.git
 cd credit-risk-prediction-app
