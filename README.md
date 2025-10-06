@@ -1,18 +1,18 @@
-🏦 Credit Risk Prediction App
+# 🏦 Credit Risk Prediction App
 
 Predict the probability of a credit card customer defaulting next month using machine learning.
 
-🚀 Live Demo
+###  🚀 Live Demo
 
 🔗 creditriskpredictionapp.streamlit.app
 
-📘 Overview
+### 📘 Overview
 
 This project builds a machine learning pipeline to predict credit card default risk based on demographic, behavioral, and financial data.
 
 The app allows users to input customer details (like credit limit, past payments, utilization rate, etc.) and get a real-time prediction of default probability.
 
-🧠 Features
+### 🧠 Features
 
 ✅ Data Cleaning & Preprocessing (handled outliers, missing values)
 ✅ Feature Engineering (utilization ratio, average payment ratio)
@@ -60,7 +60,7 @@ pip install -r requirements.txt
 # Run the app
 streamlit run app.py
 
-🌟 Future Improvements
+### 🌟 Future Improvements
 
 Add Flask API + Docker deployment version
 
@@ -70,8 +70,8 @@ Improve recall further with SMOTE or class weights
 
 Integrate CI/CD pipeline
 
-👨‍💻 Author
+## 👨‍💻 Author
 
-Amit Singh
+### Amit Singh
 Machine Learning Engineer | Data Enthusiast
-🔗 GitHub
+#### 🔗 GitHub
