@@ -3,3 +3,6 @@ joblib
 pandas
 numpy
 streamlit
+matplotlib
+seaborn
+
