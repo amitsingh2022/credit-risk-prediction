@@ -9,6 +9,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 from preprocessing import preprocess_data   # our preprocessor
 from utils import save_model
 from evaluate import evaluate_model
+from xgboost import XGBClassifier
 
 # --- Paths ---
 DATA_PATH = "../data/processed/final_loan_data.csv"
@@ -22,12 +23,15 @@ def load_data():
 def build_pipeline():
     """Build pipeline with preprocessing + model."""
     preprocessor = preprocess_data()
-    model = RandomForestClassifier(
-        n_estimators=200,
-        max_depth=8,
-        random_state=42,
-        class_weight="balanced"
-    )
+    model = xgb_model = XGBClassifier(
+    n_estimators=500,
+    learning_rate=0.05,
+    max_depth=5,
+    subsample=0.8,
+    colsample_bytree=0.8,
+    scale_pos_weight=scale_pos_weight,
+    random_state=42
+)
     pipeline = Pipeline([
         ("preprocessor", preprocessor),
         ("classifier", model)
