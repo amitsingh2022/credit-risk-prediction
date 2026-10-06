@@ -4,7 +4,7 @@ Predict the probability of a credit card customer defaulting next month using ma
 
 ###  🚀 Live Demo
 
-🔗 creditriskpredictionapp.streamlit.app
+🔗 **Live App:** [Credit Risk Prediction App](https://creditriskpredictionapp.streamlit.app/)
 
 ### 📘 Overview
 
